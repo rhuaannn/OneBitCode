@@ -7,6 +7,9 @@
     display: flex;
     background-color: black;
     flex-direction: row;
+    min-width:min-content;
+    min-height: min-content;
+    gap: 20px 10px;
     width: 100%;
     padding: 3rem;
     justify-content: space-between;
@@ -16,6 +19,7 @@
     height: 2.7rem;
     display: flex;
     gap: 2rem;
+   
 }  
 .list-header{
     display: flex;
@@ -23,6 +27,10 @@
     background-color:black;
     gap: 5rem;
     color: white;
+}
+ .list-header ul li:hover{
+    color: #1db954;
+    cursor: pointer;
 }
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,9 +45,11 @@ p{
 }
 .main-content{
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     padding: 15px;
+    width: 70vw;
+    margin: 50px;
     
 }
   .main-content img{
@@ -52,21 +62,22 @@ p{
     padding: 10px;
     
 }
+
 .card p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     width: 20rem;
 }
 .main-lateral{
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    color: rgb(8, 8, 8);
     justify-content: end;
-    color: white;
-    background-color: black;
-    margin-left: 74%;
-    width: 25%;
-    border: 1px solid black;
+    align-items: flex-end;
     
+}
+.card-lateral{
+  margin-top: 10px;
 }
 .main-lateral img{
     width: 20rem;
@@ -80,7 +91,9 @@ p{
     width: 100%;
     padding: 3rem;
     justify-content: space-between;
-    flex-wrap: wrap;       
+    flex-wrap: wrap;   
+    min-width: min-content;
+    min-height: 40px;    
 }
 .footer{
     height: 2.7rem;
