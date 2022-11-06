@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-header{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    width: 100%;
+    padding: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;       
+}
+.header{
+    height: 2.7rem;
+    display: flex;
+    gap: 2rem;
+}  
+.list-header{
+    display: flex;
+    list-style: none;
+    background-color:black;
+    gap: 5rem;
+    color: white;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    justify-content: space-around;
+    padding: 15px;
+    
+}
+  .main-content img{
+    width: 20rem;
+    height: 20rem;
+}
+.card{
+    gap: 2rem;
+    width: 100%;
+    padding: 10px;
+    
+}
+.card p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 20rem;
+}
+.main-lateral{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+    color: white;
+    background-color: black;
+    margin-left: 74%;
+    width: 25%;
+    border: 1px solid black;
+    
+}
+.main-lateral img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.footer-container{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    width: 100%;
+    padding: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;       
+}
+.footer{
+    height: 2.7rem;
+    display: flex;
+    gap: 2rem;
+ 
+}
