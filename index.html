@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fixação-CSS</title>
+    <title>Flex</title>
 </head>
-
 <body>
-    <div class="container-header">
+    <div class="container">
         <header class="header">
-            <img class="logo-rock" src="img/iconrock-red.svg" alt="">
             <img class="logo" src="img/logo-onebitcode.svg" alt="">
-
+            <div class="headerBtnGroup">
+                <button class="navBtn">Login</button>
+                <button class="navBtn">Registro</button>
+                <button class="navBtn">FAQ</button>
+            </div>
         </header>
-        <ul class="list-header">
-            <li>Login</li>
-            <li>Registro</li>
-            <li>FAQ</li>
-        </ul>
-    </div>
-    <h1>
-        Bem-Vindo a ONEBITSPORTS!
-    </h1>
-    <p>Aqui é onde você encontra todos os itens mais novos e modernos do seu esporte preferido.</p>
-
-    <div class="main-content">
-        <section class="card">
-            <img src="img/boxe.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
+        <p class="sectionTitle" id="backTop">Bem Vindo ao ONEBIT</p>
+        <p class="sectionTitle">Sport Preferido</p>
+        <section class="gridContainer">
+            <div class="mainContent">
+                <div class="categoryCard">
+                    <img src="img/boxe.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">BOX</p>
+                    <p class="mainDescription">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsam. dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/crossfit.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">crossfit</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/natacao.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Natação</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/futebolAmericano.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Futebol Americano</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/roupas.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Roupas</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/skate.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Skate</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/basquete.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Basquete</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/bicicletas.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Bicicleta</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="categoryCard">
+                    <img src="img/trilha.jpg" alt="" class="mainCardimg">
+                    <p class="mainText">Trilha</p>
+                    <p class="mainDescription">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="sidebarContent">
+                <p class="sideBarText">Categoria Extra</p>
+                <div class="sidebarCard">
+                    <img  class="sideBarImg" src="img/trilha.jpg" alt="">
+                    <p class="sideBarText">TRILHA</p>
+                </div>
+                <div class="sidebarCard">
+                    <img  class="sideBarImg" src="img/yoga.jpg" alt="">
+                    <p class="sideBarText">YOGA</p>
+                </div>
+                <div class="sidebarCard">
+                    <img  class="sideBarImg" src="img/esportesNaNeve.jpg" alt="">
+                    <p class="sideBarText">NEVE</p>
+                </div>
+                <div class="sidebarCard">
+                    <img  class="sideBarImg" src="img/skate.jpg" alt="">
+                    <p class="sideBarText">SKATE</p>
+                </div>
+                <div class="sidebarCard">
+                    <img  class="sideBarImg" src="img/surf.jpg" alt="">
+                    <p class="sideBarText">SURF</p>
+                </div>
+            </div>
         </section>
-        <section class="card">
-            <img src="img/crossfit.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
-        </section>
-        <section class="card">
-            <img src="img/natacao.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
-        </section>
-        <section class="card">
-            <img src="img/corrida.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
-        </section>
-        <section class="card">
-            <img src="img/bicicletas.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
-        </section>
-        <section class="card">
-            <img src="img/basquete.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit!</p>
-        </section>
-        <div class="main-lateral">
-            <section class="card-lateral">
-                <img src="img/bicicletas.jpg" alt="">
-                <p>Bicletas</p>
-            </section>
-            <section class="card-lateral">
-                <img src="img/esportesNaNeve.jpg" alt="">
-                <p>Bicletas</p>
-            </section>
-            <section class="card-lateral">
-                <img src="img/surf.jpg" alt="">
-                <p>Bicletas</p>
-            </section>
-            <section class="card-lateral">
-                <img src="img/yoga.jpg" alt="">
-                <p>Bicletas</p>
-            </section>
-        </div>
-    </div>
-
-    
-
-    <div class="footer-container">
         <footer class="footer">
-            <img class="logo-rock-footer" src="img/iconrock-red.svg" alt="">
-            <img class="logo-footer" src="img/logo-onebitcode.svg" alt="">
+            <img  class="logoFooter" src="img/logo-onebitcode.svg" alt="logo-footer">
+            <a href="#backTop" class="achorFooter">Voltar ao TOPO</a>
+        </footer>
+    </div>
 
-        </div>
-    </footer>
+
+
 </body>
-
 </html>
